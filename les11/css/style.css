@@ -537,6 +537,14 @@
                 gap: 33px;
             }
             
+            .header_check {
+                position: relative;
+                display: block;
+                cursor: pointer;
+                content: "";
+                box-sizing: border-box;
+            }
+            
             .promo {
                 display: -webkit-box;
                 display: -ms-flexbox;
