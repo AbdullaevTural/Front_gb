@@ -368,7 +368,7 @@ img {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (360px)[auto-fit];
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(3, 1fr);
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -633,7 +633,6 @@ img {
 
 @media (min-width: 320px) and (max-width: 767px) {
     .wrapper {
-        width: 375px;
         margin: 0 auto;
     }
     .user,
