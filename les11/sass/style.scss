@@ -1,0 +1,1505 @@
+                                            /* Links */
+                                            /* Common */
+                                            /* Form */
+                                            
+                                            @import 'vars';
+                                            * {
+                                                padding: 0px;
+                                                margin: 0px;
+                                                border: none;
+                                                box-sizing: border-box;
+                                                -webkit-box-sizing: inherit;
+                                                box-sizing: inherit;
+                                                &::before {
+                                                    box-sizing: border-box;
+                                                    -webkit-box-sizing: inherit;
+                                                    box-sizing: inherit;
+                                                }
+                                                &::after {
+                                                    box-sizing: border-box;
+                                                    -webkit-box-sizing: inherit;
+                                                    box-sizing: inherit;
+                                                }
+                                            }
+                                            
+                                            a {
+                                                text-decoration: none;
+                                                &:link {
+                                                    text-decoration: none;
+                                                }
+                                                &:visited {
+                                                    text-decoration: none;
+                                                }
+                                                &:hover {
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                            
+                                            aside {
+                                                display: block;
+                                            }
+                                            
+                                            nav {
+                                                display: block;
+                                            }
+                                            
+                                            footer {
+                                                display: block;
+                                            }
+                                            
+                                            header {
+                                                display: block;
+                                            }
+                                            
+                                            section {
+                                                display: block;
+                                            }
+                                            
+                                            main {
+                                                display: block;
+                                            }
+                                            
+                                            h1 {
+                                                font-size: inherit;
+                                                font-weight: inherit;
+                                            }
+                                            
+                                            h2 {
+                                                font-size: inherit;
+                                                font-weight: inherit;
+                                            }
+                                            
+                                            h3 {
+                                                font-size: inherit;
+                                                font-weight: inherit;
+                                            }
+                                            
+                                            h4 {
+                                                font-size: inherit;
+                                                font-weight: inherit;
+                                            }
+                                            
+                                            h5 {
+                                                font-size: inherit;
+                                                font-weight: inherit;
+                                            }
+                                            
+                                            h6 {
+                                                font-size: inherit;
+                                                font-weight: inherit;
+                                            }
+                                            
+                                            p {
+                                                font-size: inherit;
+                                                font-weight: inherit;
+                                            }
+                                            
+                                            ul {
+                                                list-style: none;
+                                                li {
+                                                    list-style: none;
+                                                }
+                                            }
+                                            
+                                            img {
+                                                vertical-align: top;
+                                                max-width: 100%;
+                                                height: auto;
+                                                height: auto;
+                                            }
+                                            
+                                            svg {
+                                                max-width: 100%;
+                                                height: auto;
+                                            }
+                                            
+                                            address {
+                                                font-style: normal;
+                                            }
+                                            
+                                            input {
+                                                font-family: inherit;
+                                                font-size: inherit;
+                                                color: inherit;
+                                                background-color: transparent;
+                                                &::-ms-clear {
+                                                    display: none;
+                                                }
+                                                &:focus {
+                                                    outline: none;
+                                                }
+                                                &:active {
+                                                    outline: none;
+                                                }
+                                            }
+                                            
+                                            textarea {
+                                                font-family: inherit;
+                                                font-size: inherit;
+                                                color: inherit;
+                                                background-color: transparent;
+                                            }
+                                            
+                                            button {
+                                                font-family: inherit;
+                                                font-size: inherit;
+                                                color: inherit;
+                                                background-color: transparent;
+                                                display: inline-block;
+                                                box-shadow: none;
+                                                background-color: transparent;
+                                                background: none;
+                                                cursor: pointer;
+                                                &:focus {
+                                                    outline: none;
+                                                }
+                                                &:active {
+                                                    outline: none;
+                                                }
+                                                &::-moz-focus-inner {
+                                                    padding: 0;
+                                                    border: 0;
+                                                }
+                                            }
+                                            
+                                            select {
+                                                font-family: inherit;
+                                                font-size: inherit;
+                                                color: inherit;
+                                                background-color: transparent;
+                                            }
+                                            
+                                            input[type="submit"] {
+                                                display: inline-block;
+                                                box-shadow: none;
+                                                background-color: transparent;
+                                                background: none;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            label {
+                                                cursor: pointer;
+                                            }
+                                            
+                                            legend {
+                                                display: block;
+                                            }
+                                            
+                                            html {
+                                                -webkit-box-sizing: border-box;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            body {
+                                                font-family: 'Lato', sans-serif;
+                                                font-style: normal;
+                                                font-size: 14px;
+                                                line-height: 1.2;
+                                                font-weight: normal;
+                                                color: #102746;
+                                            }
+                                            
+                                            .center {
+                                                padding-left: calc(50% - $widthSite / 2);
+                                                padding-right: calc(50% - $widthSite / 2);
+                                            }
+                                            
+                                            .header {
+                                                position: fixed;
+                                                top: 0px;
+                                                left: 0px;
+                                                width: 100%;
+                                                -webkit-transition: 0.2s linear;
+                                                -o-transition: 0.2s linear;
+                                                transition: 0.2s linear;
+                                                padding-bottom: 20px;
+                                                z-index: 6;
+                                                min-height: 75px;
+                                                top: 0px;
+                                                left: 0px;
+                                                background-color: rgba(34, 34, 34, 1);
+                                            }
+                                            
+                                            .wrapper {
+                                                max-width: 1140px;
+                                                margin: 0 auto;
+                                            }
+                                            
+                                            .wrapper_promo {
+                                                display: flex;
+                                                -webkit-box-orient: horizontal;
+                                                -webkit-box-direction: normal;
+                                                -ms-flex-direction: row;
+                                                flex-direction: row;
+                                                -webkit-box-pack: justify;
+                                                -ms-flex-pack: justify;
+                                                justify-content: center;
+                                                -ms-flex-align: center;
+                                                .promo_img {
+                                                    display: flex;
+                                                    align-items: flex-end;
+                                                }
+                                            }
+                                            
+                                            .header_wrapper {
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                -webkit-box-orient: horizontal;
+                                                -webkit-box-direction: normal;
+                                                -ms-flex-direction: row;
+                                                flex-direction: row;
+                                                -ms-flex-wrap: wrap;
+                                                flex-wrap: wrap;
+                                                -webkit-box-pack: justify;
+                                                -ms-flex-pack: justify;
+                                                justify-content: space-between;
+                                                -webkit-box-align: center;
+                                                -ms-flex-align: center;
+                                                align-items: center;
+                                                padding-top: 18px;
+                                            }
+                                            
+                                            .header_left {
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                -webkit-box-align: center;
+                                                -ms-flex-align: center;
+                                                align-items: center;
+                                                gap: 41px;
+                                            }
+                                            
+                                            .header_right {
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                -webkit-box-align: center;
+                                                -ms-flex-align: center;
+                                                align-items: center;
+                                                gap: 33px;
+                                            }
+                                            
+                                            .header_check {
+                                                position: relative;
+                                                display: block;
+                                                cursor: pointer;
+                                                content: "";
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .header__checkbox {
+                                                position: absolute;
+                                                visibility: hidden;
+                                                left: -9999999px;
+                                                &:checked~.mobile-menu {
+                                                    right: 0;
+                                                }
+                                            }
+                                            
+                                            .mobile-menu {
+                                                position: absolute;
+                                                top: 75px;
+                                                right: -232px;
+                                                z-index: 1;
+                                                -webkit-transition: right 0.6s;
+                                                transition: right 0.6s;
+                                                width: 232px;
+                                                background: #FFFFFF;
+                                                -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                                                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                                                padding: 32px;
+                                                -webkit-box-sizing: border-box;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            .mobile-menu__link-site {
+                                                -webkit-box-align: center;
+                                                -ms-flex-align: center;
+                                                align-items: center;
+                                                -ms-flex-pack: distribute;
+                                                justify-content: space-around;
+                                                background-color: #e8e8e8;
+                                                padding: 8px;
+                                                border-radius: 10px;
+                                                margin-bottom: 24px;
+                                                display: none;
+                                            }
+                                            
+                                            .mobile-menu__heading {
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                color: #000000;
+                                            }
+                                            
+                                            .mobile-menu__link {
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                color: #6F6E6E;
+                                                &:hover {
+                                                    color: #F16D7F;
+                                                }
+                                            }
+                                            
+                                            .mobile-menu__title {
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                color: #F16D7F;
+                                            }
+                                            
+                                            .mobile-menu__list {
+                                                list-style-type: none;
+                                                padding-left: 21px;
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                -webkit-box-orient: vertical;
+                                                -webkit-box-direction: normal;
+                                                -ms-flex-direction: column;
+                                                flex-direction: column;
+                                                gap: 11px;
+                                                margin-top: 12px;
+                                            }
+                                            
+                                            .mobile-menu__box {
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                -webkit-box-orient: vertical;
+                                                -webkit-box-direction: normal;
+                                                -ms-flex-direction: column;
+                                                flex-direction: column;
+                                                gap: 20px;
+                                                margin-top: 24px;
+                                            }
+                                            
+                                            #menu__toggle {
+                                                opacity: 0;
+                                                &:checked~.menu__box {
+                                                    right: 0 !important;
+                                                }
+                                            }
+                                            
+                                            .menu__btn {
+                                                padding-right: 25px;
+                                                >span {
+                                                    display: block;
+                                                    position: absolute;
+                                                    width: 32px;
+                                                    height: 3px;
+                                                    background-color: #e8e8e8;
+                                                    transition-duration: 0.25s;
+                                                    margin-top: -5px;
+                                                    padding-right: 10px;
+                                                    &::before {
+                                                        display: block;
+                                                        position: absolute;
+                                                        width: 32px;
+                                                        height: 3px;
+                                                        background-color: #e8e8e8;
+                                                        transition-duration: 0.25s;
+                                                        content: "";
+                                                        top: -10px;
+                                                    }
+                                                    &::after {
+                                                        display: block;
+                                                        position: absolute;
+                                                        width: 32px;
+                                                        height: 3px;
+                                                        background-color: #e8e8e8;
+                                                        transition-duration: 0.25s;
+                                                        content: "";
+                                                        top: 10px;
+                                                    }
+                                                }
+                                            }
+                                            
+                                            .menu__box {
+                                                display: flex;
+                                                position: absolute;
+                                                flex-direction: column;
+                                                top: 75px;
+                                                right: -200%;
+                                                width: 232px;
+                                                height: 634px;
+                                                margin: 0;
+                                                padding-top: 32px;
+                                                padding-left: 33px;
+                                                list-style: none;
+                                                background-color: #ffffff;
+                                                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+                                                transition-duration: 0.25s;
+                                                z-index: 10;
+                                                .menu_tag {
+                                                    font-family: "Lato";
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                    color: #f16d7f;
+                                                    padding-top: 20px;
+                                                }
+                                            }
+                                            
+                                            .menu_heading {
+                                                font-family: "Lato";
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                color: #197e14;
+                                            }
+                                            
+                                            .menu__item {
+                                                display: block;
+                                                padding-left: 20px;
+                                                padding-top: 12px;
+                                                font-family: "Lato";
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                color: #6f6e6e;
+                                                transition-duration: 0.25s;
+                                            }
+                                            
+                                            .promo {
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                background: #F1E4E6;
+                                                margin: 0 auto;
+                                                padding: 0 0px;
+                                                align-items: center;
+                                                width: 100%;
+                                                justify-content: center;
+                                                padding-top: 75px;
+                                                &:hover {
+                                                    background-color: #f4040440;
+                                                }
+                                            }
+                                            
+                                            .promo_info {
+                                                border-left: 12px solid #F16D7F;
+                                                padding-left: 16px;
+                                                margin-top: 290px;
+                                                margin-bottom: 381px;
+                                            }
+                                            
+                                            .promo_title {
+                                                font-style: normal;
+                                                font-weight: 900;
+                                                font-size: 48px;
+                                                line-height: 58px;
+                                                color: #222222;
+                                            }
+                                            
+                                            .promo_heading {
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 32px;
+                                                line-height: 38px;
+                                                color: #222222;
+                                            }
+                                            
+                                            .promo_content {
+                                                padding-left: 64px;
+                                                align-items: center;
+                                            }
+                                            
+                                            .h2pink {
+                                                color: #f16d7f;
+                                            }
+                                            
+                                            .offer {
+                                                display: grid;
+                                                max-width: 1140px;
+                                                margin: 0 auto;
+                                                column-gap: 30px;
+                                                row-gap: 30px;
+                                                grid-template-columns: repeat(6, 1fr);
+                                                padding-top: 64px;
+                                                padding-bottom: 96px;
+                                            }
+                                            
+                                            .offer_tab {
+                                                position: relative;
+                                                overflow: hidden;
+                                                &:hover {
+                                                    -webkit-transform: scale(1.05);
+                                                    -ms-transform: scale(1.05);
+                                                    transform: scale(1.05);
+                                                }
+                                            }
+                                            
+                                            .offer_tab_sm {
+                                                grid-column: span 2;
+                                            }
+                                            
+                                            .offer_tab_lg {
+                                                height: 180px;
+                                                grid-column: span 6;
+                                            }
+                                            
+                                            .sale_content {
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 100%;
+                                                top: 0;
+                                                left: 0;
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                -webkit-box-orient: vertical;
+                                                -webkit-box-direction: normal;
+                                                -ms-flex-direction: column;
+                                                flex-direction: column;
+                                                -webkit-box-pack: center;
+                                                -ms-flex-pack: center;
+                                                justify-content: center;
+                                                -webkit-box-align: center;
+                                                -ms-flex-align: center;
+                                                align-items: center;
+                                                background: rgba(33, 22, 22, 0.7);
+                                            }
+                                            
+                                            .sale_text {
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 16px;
+                                                line-height: 19px;
+                                                text-align: center;
+                                                color: #FFFFFF;
+                                            }
+                                            
+                                            .sale_heading {
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 24px;
+                                                line-height: 29px;
+                                                text-align: center;
+                                                color: #F16D7F;
+                                            }
+                                            
+                                            .product_box {
+                                                padding-bottom: 96px;
+                                                display: flex;
+                                                flex-direction: column;
+                                                &__pages {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    flex-direction: row;
+                                                    margin-top: 48px;
+                                                    gap: 18px;
+                                                    border: solid 1px #ebebeb;
+                                                    border-radius: 5px;
+                                                    padding: 15px 16px;
+                                                    align-self: center;
+                                                    &__arrows:hover path {
+                                                        fill: $colorSite;
+                                                    }
+                                                    &__link-box {
+                                                        display: flex;
+                                                        gap: 18px;
+                                                        &__link {
+                                                            color: #C4C4C4;
+                                                            font-size: 16px;
+                                                            font-weight: 300;
+                                                            &:hover {
+                                                                color: $colorSite;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            
+                                            .product_box_heading {
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 30px;
+                                                line-height: 36px;
+                                                text-align: center;
+                                                color: #222222;
+                                            }
+                                            
+                                            .product_box_text {
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                text-align: center;
+                                                margin-top: 6px;
+                                                color: #9F9F9F;
+                                            }
+                                            
+                                            .product_box_content {
+                                                margin-top: 48px;
+                                                max-width: 1140px;
+                                                display: -ms-grid;
+                                                display: grid;
+                                                -ms-grid-columns: (360px)[auto-fit];
+                                                grid-template-columns: repeat(3, 1fr);
+                                                -webkit-box-pack: center;
+                                                -ms-flex-pack: center;
+                                                justify-content: center;
+                                                gap: 30px;
+                                                align-self: center;
+                                            }
+                                            
+                                            .product {
+                                                position: relative;
+                                                &:hover .product_img {
+                                                    filter: brightness(0.5);
+                                                }
+                                                &:hover .product_add {
+                                                    display: flex;
+                                                }
+                                                &_img {
+                                                    width: 100%;
+                                                }
+                                                &_add {
+                                                    position: absolute;
+                                                    top: 188px;
+                                                    left: 111px;
+                                                    border: 1px solid #fff;
+                                                    width: 139px;
+                                                    height: 44px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                    display: none;
+                                                    -webkit-box-align: center;
+                                                    -ms-flex-align: center;
+                                                    align-items: center;
+                                                    -webkit-box-pack: center;
+                                                    -ms-flex-pack: center;
+                                                    justify-content: center;
+                                                    gap: 11px;
+                                                    color: #FFFFFF;
+                                                    &:hover {
+                                                        -webkit-box-shadow: 0 0 5px #fff;
+                                                        box-shadow: 0 0 5px #fff;
+                                                        svg {
+                                                            path {
+                                                                fill: #F16D7F;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &_content {
+                                                    background: #F8F8F8;
+                                                    display: -webkit-box;
+                                                    display: -ms-flexbox;
+                                                    display: flex;
+                                                    -webkit-box-orient: vertical;
+                                                    -webkit-box-direction: normal;
+                                                    -ms-flex-direction: column;
+                                                    flex-direction: column;
+                                                    -webkit-box-pack: center;
+                                                    -ms-flex-pack: center;
+                                                    justify-content: center;
+                                                    -webkit-box-align: start;
+                                                    -ms-flex-align: start;
+                                                    align-items: flex-start;
+                                                    padding: 24px 16px;
+                                                    gap: 16px;
+                                                }
+                                                &_heading {
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 13px;
+                                                    line-height: 16px;
+                                                    color: #000000;
+                                                    text-decoration: none;
+                                                }
+                                                &_text {
+                                                    font-style: normal;
+                                                    font-weight: 300;
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                    color: #5D5D5D;
+                                                }
+                                                &_price {
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 16px;
+                                                    line-height: 19px;
+                                                    color: #F16D7F;
+                                                }
+                                            }
+                                            
+                                            .product_button {
+                                                border: 1px solid #FF6A6A;
+                                                width: 212px;
+                                                height: 48px;
+                                                margin-top: 48.5px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-self: center;
+                                                &:hover {
+                                                    background: #FF6A6A;
+                                                }
+                                                &:focus {
+                                                    background: #FF6A6A;
+                                                }
+                                                &:active {
+                                                    background: #FF6A6A;
+                                                }
+                                            }
+                                            
+                                            .all_product_text {
+                                                color: #FF6A6A;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 16px;
+                                                width: 212px;
+                                                height: 48px;
+                                                text-decoration: none;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                &:hover {
+                                                    color: #fff;
+                                                }
+                                                &:focus {
+                                                    color: #fff;
+                                                }
+                                                &:active {
+                                                    color: #fff;
+                                                }
+                                            }
+                                            
+                                            .advantages {
+                                                padding-top: 104px;
+                                                padding-bottom: 104px;
+                                                background-color: #222224;
+                                                display: flex;
+                                                -webkit-box-orient: horizontal;
+                                                -webkit-box-direction: normal;
+                                                -ms-flex-pack: center;
+                                                justify-content: center;
+                                                gap: 30px;
+                                            }
+                                            
+                                            .advantages_item {
+                                                width: 360px;
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: flex;
+                                                -webkit-box-orient: vertical;
+                                                -webkit-box-direction: normal;
+                                                -ms-flex-direction: column;
+                                                flex-direction: column;
+                                                -webkit-box-align: center;
+                                                -ms-flex-align: center;
+                                                align-items: center;
+                                                gap: 24px;
+                                            }
+                                            
+                                            .advantages_heading {
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 20px;
+                                                line-height: 24px;
+                                                color: #FBFBFB;
+                                            }
+                                            
+                                            .advantages_text {
+                                                font-style: normal;
+                                                font-weight: 300;
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                text-align: center;
+                                                color: #FBFBFB;
+                                            }
+                                            
+                                            .subscribe {
+                                                height: 448px;
+                                                background-image: url(/img/Layer41.svg);
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                background-size: cover;
+                                            }
+                                            
+                                            .sub_fon {
+                                                background: rgba(244, 244, 244, 0.7);
+                                                height: 100%;
+                                            }
+                                            
+                                            .sub_content {
+                                                display: -webkit-box;
+                                                display: -ms-flexbox;
+                                                display: grid;
+                                                -webkit-box-orient: horizontal;
+                                                -webkit-box-direction: normal;
+                                                -ms-flex-pack: center;
+                                                justify-content: center;
+                                                grid-template-columns: repeat(3, 1fr);
+                                                justify-items: center;
+                                                margin: auto;
+                                                max-width: 1140px;
+                                            }
+                                            
+                                            .sub_item_left {
+                                                margin-top: 97px;
+                                                grid-column: 1;
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                max-width: 359px;
+                                            }
+                                            
+                                            .sub_item_right {
+                                                margin-top: 150px;
+                                                grid-column: 3;
+                                            }
+                                            
+                                            .sub_img_left {
+                                                margin-bottom: 30px;
+                                            }
+                                            
+                                            .subscribe_text {
+                                                color: #222224;
+                                                font-style: italic;
+                                                font-weight: 400;
+                                                font-size: 20px;
+                                                text-decoration: none;
+                                                text-align: center;
+                                            }
+                                            
+                                            .subscribe_text_head {
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                font-size: 24px;
+                                                line-height: 37px;
+                                                text-align: center;
+                                                color: #222224;
+                                            }
+                                            
+                                            .subscribe_text_lower {
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 18px;
+                                                line-height: 30px;
+                                                text-align: center;
+                                                color: #222224;
+                                                margin-bottom: 32px;
+                                            }
+                                            
+                                            .content {
+                                                width: 360px;
+                                                height: 40px;
+                                                box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+                                                border-radius: 60px;
+                                                overflow: hidden;
+                                            }
+                                            
+                                            .subscription {
+                                                position: relative;
+                                                width: 100%;
+                                                height: 100%;
+                                                .add-email {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    border: none;
+                                                    outline: none;
+                                                    padding: 0 20px;
+                                                    background: #E1E1E1;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    line-height: 16px;
+                                                }
+                                                .submit-email {
+                                                    position: absolute;
+                                                    top: 0;
+                                                    right: 0;
+                                                    height: calc(100% - 2px);
+                                                    width: 100px;
+                                                    border: none;
+                                                    border-radius: 0px 60px 60px 0px;
+                                                    outline: none;
+                                                    margin: 1px;
+                                                    padding: 0 20px;
+                                                    cursor: pointer;
+                                                    background: #E05C6E;
+                                                    color: #FFFFFF;
+                                                    transition: width .35s ease-in-out, background .35s ease-in-out;
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    line-height: 16px;
+                                                    text-align: center;
+                                                    .before-submit {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        text-align: center;
+                                                        line-height: 38px;
+                                                        transition: visibility .35s ease-in-out, opacity .35s ease-in-out;
+                                                    }
+                                                    .after-submit {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        text-align: center;
+                                                        line-height: 38px;
+                                                        transition: visibility .35s ease-in-out, opacity .35s ease-in-out;
+                                                        transition-delay: .35s;
+                                                    }
+                                                }
+                                                &:not(.done) {
+                                                    .submit-email {
+                                                        .after-submit {
+                                                            visibility: hidden;
+                                                            opacity: 0;
+                                                        }
+                                                        .before-submit {
+                                                            visibility: visible;
+                                                            opacity: 1;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            
+                                            .subscription.done {
+                                                .submit-email {
+                                                    .before-submit {
+                                                        visibility: hidden;
+                                                        opacity: 0;
+                                                    }
+                                                    .after-submit {
+                                                        visibility: visible;
+                                                        opacity: 1;
+                                                    }
+                                                }
+                                            }
+                                            
+                                            .fonts {
+                                                background: #222224;
+                                            }
+                                            
+                                            .footer_navbar {
+                                                max-width: 1140px;
+                                                height: 79px;
+                                                margin: 0 auto;
+                                                align-items: center;
+                                                background: #222224;
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                p {
+                                                    font-family: 'Lato';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 16px;
+                                                    line-height: 19px;
+                                                    color: #FBFBFB;
+                                                }
+                                            }
+                                            
+                                            .footer_navbar_icons {
+                                                width: 148px;
+                                                height: 32px;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                a {
+                                                    display: flex;
+                                                    font-size: 20px;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                }
+                                            }
+                                            
+                                            .fa {
+                                                width: 31px;
+                                                height: 32px;
+                                                background: #FFFFFF;
+                                                color: #000000;
+                                                &:hover {
+                                                    background: #F16D7F;
+                                                    color: #FFFFFF;
+                                                }
+                                            }
+                                            
+                                            .head {
+                                                min-height: 148px;
+                                                background: #F8F3F4;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                margin-top: 76px;
+                                                &__heading {
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 24px;
+                                                    line-height: 29px;
+                                                    color: $colorSite;
+                                                }
+                                            }
+                                            
+                                            .breadcrumb {
+                                                display: flex;
+                                                &__box-link:last-child .breadcrumb__link {
+                                                    font-weight: 700;
+                                                    color: $colorSite;
+                                                }
+                                                &__box-link:not(:last-child)::after {
+                                                    content: '/';
+                                                    padding-left: 8px;
+                                                    padding-right: 8px;
+                                                    font-style: normal;
+                                                    font-weight: 300;
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                    color: #636363;
+                                                }
+                                                &__link {
+                                                    font-style: normal;
+                                                    font-weight: 300;
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                    color: #636363;
+                                                    &:hover {
+                                                        color: $colorSite;
+                                                    }
+                                                }
+                                            }
+                                            
+                                            .filter-sort {
+                                                padding-top: 39px;
+                                                position: relative;
+                                                z-index: 1;
+                                                display: flex;
+                                                gap: $gapGrid;
+                                            }
+                                            
+                                            .filter {
+                                                padding-top: 13px;
+                                                width: 360px;
+                                                position: relative;
+                                                z-index: 10;
+                                                &__content {
+                                                    background-color: #ffff;
+                                                    padding: 0px 16px 16px;
+                                                }
+                                                &[open] {
+                                                    background: #FFF;
+                                                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                                                }
+                                                &[open] .filter__heading {
+                                                    color: $colorSite;
+                                                }
+                                                &[open] path {
+                                                    fill: $colorSite;
+                                                }
+                                                &__summary {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    gap: 11px;
+                                                    padding-left: 16px;
+                                                }
+                                                &__heading {
+                                                    font-weight: 600;
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                    color: $colorText;
+                                                }
+                                                &__item {
+                                                    margin-top: 16px;
+                                                }
+                                                &__head {
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                    color: #6f6e6e;
+                                                    padding: 8px 11px 11px 11px;
+                                                    border-bottom: 1px solid #EBEBEB;
+                                                    border-left: 5px solid $colorSite;
+                                                }
+                                                &__link-box {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    gap: 11px;
+                                                    padding: 24px 16px;
+                                                }
+                                                &__link {
+                                                    color: #6F6E6E;
+                                                    font-size: 14px;
+                                                    font-weight: 400;
+                                                    &:hover {
+                                                        color: $colorSite;
+                                                    }
+                                                }
+                                                &__item[open] .filter__head {
+                                                    color: $colorSite;
+                                                }
+                                            }
+                                            
+                                            .sorting {
+                                                padding-top: 12px;
+                                                display: flex;
+                                                gap: 18px;
+                                                &__details {
+                                                    position: relative;
+                                                }
+                                                &__summary {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    gap: 10px;
+                                                }
+                                                &__check {
+                                                    display: flex;
+                                                    gap: 9px;
+                                                    align-items: center;
+                                                }
+                                                &__check {
+                                                    color: #6F6E6E;
+                                                    font-family: Roboto;
+                                                    font-size: 14px;
+                                                    font-weight: 400;
+                                                }
+                                                &__heading {
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                    color: #6F6E6E;
+                                                }
+                                                &__box {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    gap: 8px;
+                                                    background: #ffff;
+                                                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                                                    padding: 7px 30px 11px 9px;
+                                                    position: absolute;
+                                                    left: -9px;
+                                                    top: 22px;
+                                                }
+                                            }
+                                            
+                                            @media screen and (max-width: 1024px) {
+                                                .wrapper {
+                                                    width: 768px;
+                                                    margin: 0 auto;
+                                                }
+                                                .header {
+                                                    min-height: 75px;
+                                                    top: 0px;
+                                                    left: 0px;
+                                                    width: 100%;
+                                                    -webkit-transition: 0.2s linear;
+                                                    -o-transition: 0.2s linear;
+                                                    transition: 0.2s linear;
+                                                    padding-bottom: 0px;
+                                                    display: -webkit-box;
+                                                    display: -ms-flexbox;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                }
+                                                .header_wrapper {
+                                                    margin-left: 32px;
+                                                    margin-right: 32px;
+                                                    margin-top: 18px;
+                                                    margin-bottom: 18px;
+                                                    padding: 0px;
+                                                }
+                                                .top_container {
+                                                    width: 768px;
+                                                }
+                                                .wrapper_promo {
+                                                    display: flex;
+                                                    -webkit-box-orient: horizontal;
+                                                    -webkit-box-direction: normal;
+                                                    -ms-flex-direction: row;
+                                                    flex-direction: row;
+                                                    -webkit-box-pack: justify;
+                                                    -ms-flex-pack: justify;
+                                                    justify-content: center;
+                                                    .promo_img {
+                                                        display: flex;
+                                                        align-items: flex-end;
+                                                        height: 368px;
+                                                        width: 386px;
+                                                    }
+                                                }
+                                                .promo {
+                                                    height: 100%;
+                                                    display: flex;
+                                                    justify-content: space-around;
+                                                }
+                                                .promo_info {
+                                                    margin-top: 138px;
+                                                    margin-bottom: 138px;
+                                                    margin-right: 33px;
+                                                }
+                                                .promo_title {
+                                                    font-style: normal;
+                                                    font-weight: 900;
+                                                    font-size: 44px;
+                                                    line-height: 52.8px;
+                                                    color: #222222;
+                                                }
+                                                .promo_heading {
+                                                    font-style: normal;
+                                                    font-weight: 700;
+                                                    font-size: 24px;
+                                                    line-height: 28.8px;
+                                                    color: #222222;
+                                                }
+                                                .promo_content {
+                                                    padding-left: 39px;
+                                                }
+                                                .offer {
+                                                    display: -ms-grid;
+                                                    display: grid;
+                                                    column-gap: 19.9px;
+                                                    row-gap: 19.9px;
+                                                    grid-template-columns: repeat(6, 1fr);
+                                                    padding-top: 64.95px;
+                                                    padding-bottom: 109.92px;
+                                                    margin-left: 16px;
+                                                    margin-right: 16px;
+                                                }
+                                                .offer_tab_sm {
+                                                    grid-column: span 2;
+                                                }
+                                                .offer_tab_lg {
+                                                    height: 120px;
+                                                    grid-column: span 6;
+                                                }
+                                                .product_box_content {
+                                                    margin-top: 48px;
+                                                    display: -ms-grid;
+                                                    display: grid;
+                                                    grid-template-columns: repeat(2, 1fr);
+                                                    -webkit-box-pack: center;
+                                                    -ms-flex-pack: center;
+                                                    justify-content: center;
+                                                    gap: 16px;
+                                                    margin-left: 16px;
+                                                    margin-right: 16px;
+                                                }
+                                                .product_button {
+                                                    width: 212px;
+                                                    height: 48px;
+                                                    display: flex;
+                                                    justify-self: center;
+                                                    margin-top: 32px;
+                                                }
+                                                .product_box {
+                                                    padding-bottom: 70.52px;
+                                                }
+                                                .advantages {
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    gap: 48px;
+                                                }
+                                                .subscribe {
+                                                    height: 693px;
+                                                }
+                                                .sub_content {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                }
+                                                .sub_item_left {
+                                                    margin-top: 64px;
+                                                }
+                                                .sub_item_right {
+                                                    margin-top: 48px;
+                                                }
+                                                .footer_navbar {
+                                                    margin: 0 32px;
+                                                }
+                                            }
+                                            
+                                            @media (min-width: 320px) and (max-width: 767px) {
+                                                .wrapper {
+                                                    margin: 0 auto;
+                                                }
+                                                .user {
+                                                    display: none;
+                                                }
+                                                .cart {
+                                                    display: none;
+                                                }
+                                                .header {
+                                                    min-height: 75px;
+                                                    top: 0px;
+                                                    left: 0px;
+                                                    width: 100%;
+                                                    -webkit-transition: 0.2s linear;
+                                                    -o-transition: 0.2s linear;
+                                                    transition: 0.2s linear;
+                                                    padding-bottom: 0px;
+                                                    display: -webkit-box;
+                                                    display: -ms-flexbox;
+                                                    display: flex;
+                                                    flex-direction: row;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                }
+                                                .header_wrapper {
+                                                    margin-left: 32px;
+                                                    margin-right: 32px;
+                                                    margin-top: 18px;
+                                                    margin-bottom: 18px;
+                                                    padding: 0px;
+                                                }
+                                                .top_container {
+                                                    width: 768px;
+                                                }
+                                                .wrapper_promo {
+                                                    display: flex;
+                                                    -webkit-box-orient: horizontal;
+                                                    -webkit-box-direction: normal;
+                                                    -ms-flex-direction: row;
+                                                    flex-direction: row;
+                                                    -webkit-box-pack: justify;
+                                                    -ms-flex-pack: justify;
+                                                    justify-content: center;
+                                                    .promo_img {
+                                                        display: none;
+                                                    }
+                                                }
+                                                .promo {
+                                                    height: 100%;
+                                                    display: flex;
+                                                    justify-content: space-around;
+                                                }
+                                                .promo_info {
+                                                    margin-top: 138px;
+                                                    margin-bottom: 138px;
+                                                    margin-right: 33px;
+                                                }
+                                                .promo_title {
+                                                    font-style: normal;
+                                                    font-weight: 900;
+                                                    font-size: 38px;
+                                                    line-height: 45px;
+                                                    color: #222222;
+                                                }
+                                                .promo_heading {
+                                                    font-style: normal;
+                                                    font-weight: 700;
+                                                    font-size: 20px;
+                                                    line-height: 24px;
+                                                    color: #222222;
+                                                }
+                                                .promo_content {
+                                                    padding-left: 0px;
+                                                }
+                                                .offer {
+                                                    display: -ms-grid;
+                                                    display: grid;
+                                                    column-gap: 19.9px;
+                                                    row-gap: 19.9px;
+                                                    grid-template-columns: repeat(6, 1fr);
+                                                    padding-top: 64.95px;
+                                                    padding-bottom: 109.92px;
+                                                    margin-left: 16px;
+                                                    margin-right: 16px;
+                                                }
+                                                .offer_tab {
+                                                    height: 248px;
+                                                }
+                                                .lg_767 {
+                                                    object-fit: cover;
+                                                    width: 100%;
+                                                }
+                                                .llg_767 {
+                                                    object-fit: cover;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                                .offer_tab_sm {
+                                                    grid-column: span 6;
+                                                }
+                                                .offer_tab_lg {
+                                                    height: 120px;
+                                                    grid-column: span 6;
+                                                }
+                                                .product_box_content {
+                                                    margin-top: 48px;
+                                                    display: -ms-grid;
+                                                    display: grid;
+                                                    grid-template-columns: repeat(2, 1fr);
+                                                    -webkit-box-pack: center;
+                                                    -ms-flex-pack: center;
+                                                    justify-content: center;
+                                                    gap: 16px;
+                                                    margin-left: 16px;
+                                                    margin-right: 16px;
+                                                }
+                                                .product_button {
+                                                    width: 212px;
+                                                    height: 48px;
+                                                    display: flex;
+                                                    justify-self: center;
+                                                    margin-top: 40px;
+                                                    grid-area: b;
+                                                }
+                                                .product_box {
+                                                    padding-bottom: 70.52px;
+                                                }
+                                                .product {
+                                                    grid-column: span 2;
+                                                }
+                                                .subscribe {
+                                                    height: 550px;
+                                                }
+                                                .footer_navbar {
+                                                    height: 143px;
+                                                    margin: 0 auto;
+                                                    align-items: center;
+                                                    background: #222224;
+                                                    display: flex;
+                                                    flex-direction: column-reverse;
+                                                    align-items: center;
+                                                    justify-content: space-around;
+                                                    padding-top: 43px;
+                                                }
+                                                .menu__box {
+                                                    display: flex;
+                                                    position: absolute;
+                                                    flex-direction: column;
+                                                    top: 75px;
+                                                    right: -200%;
+                                                    width: 192px;
+                                                    height: 558px;
+                                                    margin: 0;
+                                                    padding-top: 10px;
+                                                    padding-left: 21px;
+                                                    list-style: none;
+                                                }
+                                                .menu__item {
+                                                    display: block;
+                                                    padding-left: 20px;
+                                                    padding-top: 10px;
+                                                    font-family: "Lato";
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    line-height: 17px;
+                                                    color: #6f6e6e;
+                                                    transition-duration: 0.25s;
+                                                }
+                                            }
